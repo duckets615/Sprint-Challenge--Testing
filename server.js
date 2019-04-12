@@ -17,17 +17,14 @@ let games = [
 let id = 0;
 
 // endpoints tests
-// --- Test GET Endpoint ---
-server.get('/testme/14', (req, res) => {
-    res.status(200).json('One More Time');
-});
 
-// --- GET All Games Endpoint ---
+
+//GET all
 server.get('/games', (req, res) => {
     res.status(200).json(games);
 });
 
-// --- GET Individual Game Endpoint ---
+// GET indiv game EP
 server.get('/games/:id', (req, res) => {
     // Extract URL Parameters
     const { id } = req.params;
@@ -43,7 +40,7 @@ server.get('/games/:id', (req, res) => {
     res.status(404).json({ errorMessage: "No game was found with an id matching the provided id." });
 });
 
-// --- POST Game Endpoint ---
+//  POST game EP
 server.post('/games', (req, res) => {
     let { title, genre, releaseYear } = req.body;
 
@@ -72,7 +69,7 @@ server.post('/games', (req, res) => {
 });
 
 
-// --- DELETE Game Endpoint ---
+//  DELETE game EP
 server.delete('/games/:id', (req, res) => {
     const gameId = req.params.id;
     let idExists = false;
