@@ -7,7 +7,7 @@
 
 
 2.  What is the point of `Test Driven Development`? What do you think about this approach?
-     - Test Driven Developement is a way of developing robust, sustainable, applications by developing the application simultaneously with developing tests. This will give you some parameters to use for your project that can act like a framework, This will help cutdown on the number of bugs when changes are made in the future.
+     - Test Driven Developement is a way of developing robust, sustainable, applications by developing the application simultaneously with developing tests. This will give you some parameters to use for your project that can act like a framework, This will help cutdown on the number of bugs when changes are made in the future. Personally, I get alot of bugs in my code so this is something that should help me out.
 
 
 3.  What are `mocks`? What are a good use cases for them?
