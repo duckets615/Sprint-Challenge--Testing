@@ -18,7 +18,7 @@ let id = 0;
 
 // endpoints tests
 // --- Test GET Endpoint ---
-server.get('/testmebaby/149', (req, res) => {
+server.get('/testme/14', (req, res) => {
     res.status(200).json('One More Time');
 });
 
